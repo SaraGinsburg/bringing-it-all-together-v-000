@@ -75,11 +75,13 @@ class Dog
       dog_data = dog[0]
       # binding.pry
       dog = Dog.new(id: dog_data[0], name: dog_data[1], breed: dog_data[2])
+      dog
     else
       dog = Dog.new(name: name, breed: breed )
-      # save
+      dog.save
+      
     end
-    dog
+    
   end
       
 end
