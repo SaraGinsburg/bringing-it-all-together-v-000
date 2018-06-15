@@ -75,5 +75,6 @@ class Dog
       dog_data = dog[0]
       binding.pry
     end
+  end
       
 end
