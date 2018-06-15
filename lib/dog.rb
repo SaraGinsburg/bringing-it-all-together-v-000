@@ -71,7 +71,7 @@ class Dog
     SQL
   
     dog = DB[:conn].execute(sql, name, breed)
-    if !dog_data.empty?
+    if !dog.empty?
       dog_data = dog[0]
       binding.pry
     end
