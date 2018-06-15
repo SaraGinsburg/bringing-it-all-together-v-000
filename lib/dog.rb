@@ -96,6 +96,8 @@ class Dog
     row = DB[:conn].execute(sql, name)
     if !row.empty
       dog_data = row[0]
+      dog = Dog.new(id: dog_data[0], name: dog_data[1], breed: dog_data[2])
+      dog
     end
   end
 end
