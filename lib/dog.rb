@@ -77,6 +77,7 @@ class Dog
     else
       dog = Dog.new(name: name, breed: breed )
     end
+    dog
   end
       
 end
