@@ -94,8 +94,8 @@ class Dog
     SQL
     
     row = DB[:conn].execute(sql, name)
-    binding.pry
     if !row.empty
+      dog_data = row[0]
     end
   end
 end
