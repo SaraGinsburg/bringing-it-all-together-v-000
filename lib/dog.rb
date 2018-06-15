@@ -102,6 +102,9 @@ class Dog
   end
   
   def update
-    
+    id = self.id
+    sql = <<-SQL
+      UPDATE
+    SQL
   end
 end
