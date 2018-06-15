@@ -104,7 +104,8 @@ class Dog
   def update
     id = self.id
     sql = <<-SQL
-      UPDATE
+      UPDATE dogs
+      SET name = ?
     SQL
   end
 end
